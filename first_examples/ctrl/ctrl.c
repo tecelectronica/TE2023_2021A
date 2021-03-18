@@ -8,11 +8,23 @@ void ifelse()
    
   printf("\n\nIf-Else example:\n");
 
-  if (cows > 1)
-    printf("We have cows\n");
+// a = 3, b = 3;
+// a == b -> 1
+// a != b -> 0
+// a > b -> 0
+// a < b -> 0
+// a >= b -> 1
+// a <= b -> 1
 
-  if (cows > 10)
+  if (cows > 1){
+    printf("We have cows\n");
+    printf("Esto tambien\n");
+  }
+
+  if (cows > 10){
     printf("loads of them!\n");
+    printf("loads of them!\n");
+  }
   else
     printf("Executing else part...!\n");
 
@@ -23,6 +35,9 @@ void ifelse()
   else if (cows == 6 )
   {
     printf("We have 6 cows\n");
+  }
+  else{
+      printf("We have neither 5 nor 6 cows\n");
   }
 }
 
@@ -36,6 +51,7 @@ void ternary() {
    printf("\n\nTernary operator example:\n");
 
    a = 10;
+   b = (a == 2) ? 5 : 6;
    printf( "Value of b is %d\n", (a == 1) ? 20: 30 );
 
    printf( "Value of b is %d\n", (a == 10) ? 40: 50 );
@@ -46,18 +62,30 @@ void ternary() {
 
 void switchcase()
 {
-    int  Grade = 'A';
+    int  Grade = 'D';
     printf("\n\nSwitch Case example:\n");
 
     switch( Grade )
     {
         //FIXME: All statements are executed
-        case 'A' : printf( "A\n" );
-        case 'B' : printf( "B\n" );
-        case 'C' : printf( "C\n" );
-        case 'D' : printf( "D\n" );
-        case 'E' : printf( "E\n" );    
-        default  : printf( "Anything else.\n" );
+        case 'A' : 
+            printf( "A\n" );
+            break;
+        case 'B' : 
+            printf( "B\n" );
+            break;
+        case 'C' : 
+            printf( "C\n" );
+            break;
+        case 'D' : 
+            printf( "D\n" );
+            break;
+        case 'E' : 
+            printf( "E\n" );
+            break;
+        default  : 
+            printf( "Anything else.\n" );
+            break;
     }	
 }
 
@@ -67,7 +95,7 @@ void switchcase()
 
 void whileloop()
 {
-    int i = 10;
+    int i = 0;
     printf("\n\nWhile loop example:\n");
 
     while ( i > 0 )
@@ -86,18 +114,19 @@ void forloop()
     int j = 10;
     printf("\n\nFor loop example:\n");
 
-    for( i = 0; i <= j; i ++ )
+    for( i = 0; i <= j; i++ )
     {
        printf("Hello %d\n", i );
     }
 }
+
 
 //Do while loop
 #include <stdio.h>
 
 void dowhileloop()
 {
-    int i = 10;
+    int i = 0;
     printf("\n\nDo while loop example:\n");
 
     do{
@@ -126,11 +155,11 @@ void continuestatement()
 }
 
 int main(){
-    ifelse();
-    ternary();
-    switchcase();
-    whileloop();
-    forloop();
-    dowhileloop();
-    continuestatement();
+    //ifelse();
+    //ternary();
+    //switchcase();
+    //whileloop();
+    //forloop();
+    //dowhileloop();
+    //continuestatement();
 }
