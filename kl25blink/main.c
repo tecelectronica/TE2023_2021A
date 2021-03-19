@@ -4,6 +4,8 @@
  * Description: Blink KL25z board LEDs at different speeds
  * */
 
+// TODO[CODE][Task3] Replicate behaviour for Blue LED
+
 /* TODO[DEFINE][Task1] SIM_SCGC5. System Integration Module System Clock Gating Control Register 5*/
 /* TODO[DEFINE][Task1] PORTB_PCR18. Port B Pin Control Register 18*/
 /* TODO[DEFINE][Task1] GPIOB_PDDR. Port B Data Direction Register */
@@ -15,12 +17,10 @@
 // TODO[DEFINE][Task2] RED_LED_PCR Constant for RED LED PCR based on PORTB_PCR19
 // TODO[DEFINE][Task2] RED_LED_BIT Constant with RED LED position in register
 
-// Function Declaration
+// NOTE: Function Declaration
 void delay(int n);
 
 int main (void) {
-    
-
     //TODO[CODE][Task1] enable clock to Port B
     //TODO[CODE][Task1] make PTB19 pin as GPIO
     //TODO[CODE][Task1] make PTB19 as output pin
@@ -34,7 +34,7 @@ int main (void) {
     }
 }
 
-// Function definition
 //TODO[CODE][Task1] Define delay function using for loops
+// NOTE: Function definition
 void delay(int n) {
 }
