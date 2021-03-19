@@ -7,6 +7,7 @@
 // TODO[CODE][Task3] Replicate behaviour for Blue LED
 
 /* TODO[DEFINE][Task1] SIM_SCGC5. System Integration Module System Clock Gating Control Register 5*/
+#define SIM_SCGC5   (*((volatile unsigned int*)0x40048038))
 /* TODO[DEFINE][Task1] PORTB_PCR18. Port B Pin Control Register 18*/
 /* TODO[DEFINE][Task1] GPIOB_PDDR. Port B Data Direction Register */
 /* TODO[DEFINE][Task1] GPIOB_PDOR. Port B Data Output Register */
