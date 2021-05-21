@@ -101,6 +101,9 @@
 							<tool id="com.crt.advproject.tool.debug.debug.1859947498" name="MCU Debugger" superClass="com.crt.advproject.tool.debug.debug"/>
 						</toolChain>
 					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
